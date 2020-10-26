@@ -1,16 +1,11 @@
 #微信小程序项目开发——和茶网
 
-##作者：杜少
-##更多资料详情请咨询本人[博客](http://www.takozhang.cn)
-
 小程序发布之后，网上对微信小程序的讨论也异常火爆，从发布到现在微信小程序一直占领着各种技术论坛的头条，当然各种平台也对微信小程序有新闻报道，毕竟腾讯在国内影响力还是很大的。
 
 因为自己对小程序也是很有兴趣的，感觉是很有意思的一个东西，所以立马做了一个项目，水平有限，所以做的过程也就是一个学习的过程，一个提高的过程。
 
 ###下面的gif图是我项目的演示，代码需要在该文件夹根目录起服务，端口号为81
 
-![](https://github.com/dushao103500/WeChat-hecha-project/tree/master/images/wechat-hecha-project.gif)
-**图片若不能显示，请狠狠戳[这里](https://github.com/dushao103500/WeChat-hecha-project/blob/master/images/wechat-hecha-project.gif)**
 
 ###项目主要构建
 
