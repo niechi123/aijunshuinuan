@@ -18,10 +18,32 @@
 
 >最后一个导航栏目为管理中心
 
-```mermaid
-graph LR
-A[长方形] -- 链接 --> B((圆))
-A --> C(圆角长方形)
-B --> D{菱形}
-C --> D
-```
+### 其中的栏目包括
+
+- 查看所有产品
+	+ 修改商品
+	+ 删除商品
+- 添加商品
+
+
+### 应该有的表
+>####  一、商品类型表：shop_type
+
+字段名 |属性 | 名称
+----------| --- | ----
+id  	  | int | 类型id
+typename  | string | 类型名称
+typenum	  | int 	| 类型级别
+aaaaaa	  | int 	| 备用字段1
+bbbbbb	  | int 	| 备用字段2
+
+
+>#### 二、商品表：shops
+
+字段名 |属性 | 名称
+----------| --- | ----
+id  	  | int | 商品id
+name  	  | string | 商品名称
+tid	  	  | int 	| 类型id值
+aaaaaa	  | int 	| 备用字段1
+bbbbb	  | int 	| 备用字段2
