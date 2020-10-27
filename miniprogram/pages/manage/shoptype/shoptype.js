@@ -33,7 +33,6 @@ Page({
             thisPage.setData({
               dataList:res.data
             });
-            console.log(res.data)
           }
         })
       
@@ -120,12 +119,10 @@ Page({
 
   //滑动事件处理
   touchmove: function (e) {
-    console.log(123)
-    let data = App.touch._touchmove(e, this.data.dataList,'id')//将修改过的list setData
+    let data = App.touch._touchmove(e, this.data.dataList,'_id')//将修改过的list setData
     this.setData({
       dataList: data
     })
-    console.log(123)
   },
 
   /**

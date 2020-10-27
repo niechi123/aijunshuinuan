@@ -20,6 +20,7 @@ class touch {
 
   _touchmove(e, items,key) {
       const id = e.currentTarget.dataset.id, //获取列表中每一项的唯一值，可以取id
+     
       touchMoveX = e.changedTouches[0].clientX, //滑动变化坐标
       touchMoveY = e.changedTouches[0].clientY, //滑动变化坐标
       //获取滑动角度
@@ -30,7 +31,9 @@ class touch {
           X: touchMoveX,
           Y: touchMoveY
         });
+        console.log(id);
     items.forEach(function (v, i) {
+      console.log(v[key]);
       v.isTouchMove = false
       //滑动超过30度角 return
       if (Math.abs(angle) > 30) return;
@@ -39,7 +42,10 @@ class touch {
           v.isTouchMove = false
         else //左滑
           v.isTouchMove = true
+        console.log(123)
       }
+      else 
+      console.log(321)
     })
     return items
   }
