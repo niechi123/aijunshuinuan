@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText": "管理中心",
-  "navigationBarBackgroundColor": "#267dcc"
+  "navigationBarBackgroundColor": "#267dcc",
+  "disableScroll": true
 }

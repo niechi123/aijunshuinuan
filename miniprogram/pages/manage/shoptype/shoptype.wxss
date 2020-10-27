@@ -19,7 +19,8 @@ button{
 .list-page{
   display: flex;
   flex-direction: column;
-  border-top: 2rpx solid #f0f0f0
+  border-top: 2rpx solid #f0f0f0;
+  overflow-x:hidden;
 }
 .list-item{
   height: 160rpx;

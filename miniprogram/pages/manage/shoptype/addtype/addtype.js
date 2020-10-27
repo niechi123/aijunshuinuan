@@ -57,12 +57,13 @@ Page({
       data: {
         typename: data.typename,
         typenum: data.typenum,
-        isTouchMove: false
+        isTouchMove: false //这个字段是为了在左滑列表中的单个时需要判断的地方
       },
       success: function(res) {
         // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
         console.log(res)
         wx.navigateTo({
+          // 添加完后跳转到商品列表页
           url: '../shoptype'
         })  
       }

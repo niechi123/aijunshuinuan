@@ -8,9 +8,7 @@
     "pages/index/index",
     "pages/sortMenu/sortMenu",
     "pages/my/my",
-    "pages/shoppingCart/shoppingCart",
-    "pages/sort/sort",
-    "pages/detail/detail"
+    "pages/shoppingCart/shoppingCart"
   ],
   "debug": true,
   "window": {
