@@ -1,0 +1,31 @@
+<form bindsubmit="formSubmit">
+    <view class="main">
+        <view class="form-content">
+            <view class="form-item">
+                <view class="left">分类名称</view>
+                <input class="right-input" name="typename"  placeholder="请输入分类名称" />
+            </view>
+
+            <view class="form-item">
+                <view class="left">上级分类</view>
+                <view class='select_box'>
+                    <view class='select' catchtap='selectTap'>
+                        <text class='select_text'>{{selectData[index]}}</text>
+                        <image class='select_img {{show&&"select_img_rotate"}}' src='/image/gobottom.png'></image>   
+                    </view>
+                    <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+                    <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="form-item">
+                <view class="left">分类级别</view>
+                <input class="right-input" name="typenum" placeholder="请输入数字" />
+            </view>
+                
+        </view>
+    </view>
+    <view class="bottom">
+        <button class="save-btn" form-type="submit">保存</button>
+    </view>
+</form>

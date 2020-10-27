@@ -1,0 +1,20 @@
+<view class="list-page">
+  <view class="list-item {{item.isTouchMove?'list-item-touch-active':''}}" wx:for="{{dataList}}" wx:for-item="item" wx:for-index="index" bindtouchstart="touchstart" bindtouchmove="touchmove" data-id="{{item._id}}" wx:key="item._id">
+<view class="item-content">
+      <view class="content-name">{{item.typename}}</view>
+      <view class="content-info"> 
+        <text>{{item.typenum}}</text>
+        <text>{{item.sex}}</text>
+      </view>
+    </view>
+
+    <view class="item-delete">删除</view>
+  </view>
+</view>
+
+
+<view class="button-sp-area">
+  <button type="primary" plain="true" catchtap="goAddType">添加分类</button>
+</view>
+
+

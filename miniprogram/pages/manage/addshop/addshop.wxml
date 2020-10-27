@@ -1,0 +1,70 @@
+<form bindsubmit="formSubmit">
+    <view class="main">
+        <view class="top-title">基本信息</view>
+        <view class="form-content">
+            <view class="form-item">
+                <view class="left">成员姓名</view>
+                <input class="right-input" placeholder="请输入成员真实姓名" />
+            </view>
+            <view class="form-item">
+                <view class="left">身份证号</view>
+                <input class="right-input" placeholder="请输入身份证号" />
+            </view>
+            <view class="form-item">
+                <view class="left">生存状态</view>
+                <input class="right-input" placeholder="请输入生存状态" />
+            </view>
+            <view class="form-item">
+                <text class="left">成员性别</text>
+                <view class="sex-box">
+                    <radio-group name="sex" bindchange="changeSex">
+                        <radio class="radio-item" value="1" checked="checked" color="#DBB975">
+                            男
+                        </radio>
+                        <radio class="radio-item" value="2" checked="" color="#DBB975">女</radio>
+                    </radio-group>
+                </view>
+            </view>
+            <view class="form-item">
+                <view class="left">与户主关系</view>
+                <picker range="{{array}}" bindchange="bindPickerChange">
+                    <view class="select-box">
+                        <input class="right-input" disabled="{{true}}" value="{{array[index]}}" placeholder="请选择与户主关系" />
+                        <view class="info_more">
+                            <image class="more" src="/images/common/more_gray.png" />
+                        </view>
+                    </view>
+                </picker>
+            </view>
+            <view class="form-item">
+                <view class="left">劳动技能</view>
+                <picker range="{{array}}" bindchange="bindPickerChange">
+                    <view class="select-box">
+                        <input class="right-input" disabled="{{true}}" value="{{array[index]}}" placeholder="请选择劳动技能" />
+                        <view class="info_more">
+                            <image class="more" src="/images/common/more_gray.png" />
+                        </view>
+                    </view>
+                </picker>
+            </view>
+            <view class="form-item">
+                <view class="left">在校生情况</view>
+                <picker range="{{array}}" bindchange="bindPickerChange">
+                    <view class="select-box">
+                        <input class="right-input" disabled="{{true}}" value="{{array[index]}}" placeholder="请选择在校生情况" />
+                        <view class="info_more">
+                            <image class="more" src="/images/common/more_gray.png" />
+                        </view>
+                    </view>
+                </picker>
+            </view>
+            <view class="form-item">
+                <view class="left">健康情况</view>
+                <input class="right-input" placeholder="如健康、残疾 、长期慢性病" />
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <button class="save-btn" form-type="submit">保存</button>
+    </view>
+</form>

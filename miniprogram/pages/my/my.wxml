@@ -1,14 +1,5 @@
 <view class="my-container">
-  <modal class="login" title="请登录你的账号" confirm-text="确认" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="signConfirm">
-     <label>
-       <view>账号：</view>
-       <input placeholder="请输入你的账号" bindinput="saveUsername" />
-     </label>
-     <label>
-       <view>密码：</view>
-       <input password="{{true}}" placeholder="请输入你的密码" bindinput="savePassword" />
-     </label>
-  </modal>
+  
   <view class="box" wx:if="{{boxHidden}}">
     <view class="header">
       <view class="headerTop">

@@ -1,4 +1,5 @@
 //app.js
+import touch from './utils/touch.js'//新加
 App({
   onLaunch: function () {
     //调用API从本地缓存中获取数据
@@ -26,5 +27,6 @@ App({
   },
   globalData:{
     userInfo:null
-  }
+  },
+  touch: new touch()
 })

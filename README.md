@@ -29,21 +29,23 @@
 ### 应该有的表
 >####  一、商品类型表：shop_type
 
-字段名 |属性 | 名称
+字段 |属性 | 名称
 ----------| --- | ----
 id  	  | int | 类型id
 typename  | string | 类型名称
 typenum	  | int 	| 类型级别
+typepic	  | string 	| 类型图片
 aaaaaa	  | int 	| 备用字段1
 bbbbbb	  | int 	| 备用字段2
 
 
 >#### 二、商品表：shops
 
-字段名 |属性 | 名称
+字段 |属性 | 名称
 ----------| --- | ----
 id  	  | int | 商品id
 name  	  | string | 商品名称
 tid	  	  | int 	| 类型id值
+pic	  	  | string 	| 商品图片
 aaaaaa	  | int 	| 备用字段1
 bbbbb	  | int 	| 备用字段2

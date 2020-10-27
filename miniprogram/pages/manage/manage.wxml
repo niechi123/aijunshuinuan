@@ -1,0 +1,14 @@
+<view class="my-container">
+  <view class="box" wx:if="{{boxHidden}}">
+    <view class="jianju"></view>
+    <view class="person">
+      <ul>
+        <li wx:for="{{imgBox}}" wx:for-item="item">
+            <span><image src="{{item.icon}}"></image></span>
+            <b>{{item.info}}</b>
+            <a catchtap="goHouseDetail" data-url="{{item.url}}"><image src="/images/myImages/you.png"></image></a>
+        </li>
+      </ul>
+    </view>
+  </view>
+</view>
